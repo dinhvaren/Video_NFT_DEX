@@ -4,6 +4,7 @@ import methodOverride from 'method-override'; // Cho phép sử dụng HTTP meth
 import path from 'path'; // Thư viện làm việc với đường dẫn file
 import next from 'next'; // Import Next.js để kết hợp với Express
 import { fileURLToPath } from 'url'; // Giúp xử lý đường dẫn file trong ES Modules
+import route from '../src/routers/route.js';
 // Khởi tạo ứng dụng Express
 const app = express();
 // Cổng mà server sẽ chạy
@@ -17,7 +18,6 @@ const handle = nextApp.getRequestHandler(); // Xử lý request Next.js
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-import route from '../src/routers/route.js';
 // const db = require('./config/db');
 
 // Kết nối database

@@ -6,6 +6,6 @@ function route(app) {
  // app.use('/', homeRouter);
 
 // Sử dụng walletRouter cho tất cả các request có đường dẫn `/`
-    app.use('/', walletRouter)
+    app.use('/api', walletRouter)
 }
 export default route; // Xuất hàm route để sử dụng trong ứng dụng Express chính

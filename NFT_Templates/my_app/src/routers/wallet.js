@@ -5,6 +5,6 @@ const router = express.Router();
 import WalletConnectController from '../app/controller/WalletConnectController.js';
 
 // Định nghĩa route GET "/walletconnect" và gọi phương thức `connect` từ WalletConnectController
-router.get('/walletconnect', WalletConnectController.connect);
+router.get('/connect', WalletConnectController.connect);
 
 export default router;

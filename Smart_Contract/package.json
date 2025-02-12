@@ -1,0 +1,26 @@
+{
+  "name": "nftmarketplace",
+  "version": "1.0.0",
+  "description": "NFT Marketplace",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx hardhat run scripts/deploy.js --network localhost",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Numisu Kei",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.8",
+    "@nomicfoundation/hardhat-ethers": "^3.0.8",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "chai": "^4.2.0",
+    "ethers": "^6.13.5",
+    "hardhat": "^2.22.18"
+  },
+  "dependencies": {
+    "@openzeppelin/cli": "^2.8.2",
+    "@openzeppelin/contracts": "^4.9.3",
+    "alchemy-sdk": "^3.5.2",
+    "dotenv": "^16.4.7"
+  }
+}

@@ -1,0 +1,18 @@
+
+.button {
+    background: #151b24;
+    padding: 1rem 2rem;
+    border: 1px solid var(--jet);
+    border-radius: 2rem;
+    cursor: pointer;
+    transition:  all .2s ease-in;
+    color: hsl(0, 0%, 100%);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.button:hover{
+    background-color: var(--main-bg-color);
+    border:  1px solid var(--icons-color);
+    color:  var(--icons-color);
+}

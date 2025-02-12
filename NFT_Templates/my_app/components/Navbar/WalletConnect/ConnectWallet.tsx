@@ -2,37 +2,51 @@ import { useEffect, useState } from "react";
 import { ConnectButton, useActiveWallet } from "thirdweb/react";
 
 export default function ConnectWallet() {
-    const wallet = useActiveWallet(); // Lấy thông tin ví
+// Lấy thông tin ví đang kết nối (nếu có)    
+    const wallet = useActiveWallet(); 
+// State để lưu clientId từ backend
     const [client, setClient] = useState(null);
+// State để lưu danh sách ví khả dụng    
     const [wallets, setWallets] = useState([]);
-    const [error, setError] = useState<string | null>(null); 
+// State để lưu lỗi 
+    const [error, setError] = useState<string | null>(null);
 
     useEffect(() => {
-        if (!wallet) return; // Chỉ fetch nếu ví đã kết nối
+        // Chỉ fetch nếu ví đã kết nối
+        if (!wallet) return; 
 
         const fetchWalletData = async () => {
             try {
+                // Gọi API backend để lấy thông tin ví
                 const response = await fetch("http://localhost:3009/walletconnect"); 
+                // Nếu response không hợp lệ, báo lỗi
                 if (!response.ok) {
                     throw new Error("Lỗi khi lấy dữ liệu ví từ backend");
                 }
+                // Chuyển response sang JSON
                 const data = await response.json();
-                setClient(data.clientId); // Lưu client vào state
-                setWallets(data.wallets); // Lưu danh sách ví vào state
+                // Lưu client vào state
+                setClient(data.clientId); 
+                // Lưu danh sách ví vào state
+                setWallets(data.wallets); 
+                // sử dụng catch để bắt lỗi và cập nhật state `error`
             } catch (error: unknown) {
                 console.error("Lỗi khi lấy ví:", error);
+                // Nếu lỗi là dạng Error object, lấy message
                 if (error instanceof Error) { 
                     setError(error.message);
+                // Nếu lỗi là string, giữ nguyên
                 } else if (typeof error === "string") { 
                     setError(error); 
+                // Trường hợp không xác định
                 } else { 
                     setError("Đã xảy ra lỗi không xác định!"); 
                 }
             }
         };
 
-        fetchWalletData();
-    }, [wallet]); 
+        fetchWalletData(); //Gọi hàm fetch dữ liệu khi `wallet` thay đổi
+    }, [wallet]);  // Chạy lại khi `wallet` thay đổi
 
     // Nếu có lỗi, hiển thị thông báo
     if (error) {
@@ -45,9 +59,9 @@ export default function ConnectWallet() {
 
     return (
         <ConnectButton
-            client={client}
-            wallets={wallets}
-            connectModal={{ size: "wide" }}
+            client={client} // Truyền clientId vào nút kết nối
+            wallets={wallets} // Truyền danh sách ví vào
+            connectModal={{ size: "wide" }} //Cấu hình giao diện modal kết nối
         />
     );
 }

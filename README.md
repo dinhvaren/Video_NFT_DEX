@@ -24,7 +24,7 @@
 ---
 
  🏗 System Architecture  
-![Architecture]()
+![Architecture](https://developers.moralis.com/wp-content/uploads/2023/10/Architecture-components-of-an-NFT-marketplace-and-what-developers-need-to-interact-with-1024x435.jpeg)
 
  1️⃣ Frontend (React + Thirdweb)  
 - Next.js + React.js – Seamless UI with optimized performance.  
@@ -156,7 +156,7 @@ ________________________________________________________________________________
 ---
 
  🏗 Kiến Trúc Hệ Thống  
-![Architecture]()  
+![Architecture](https://developers.moralis.com/wp-content/uploads/2023/10/Architecture-components-of-an-NFT-marketplace-and-what-developers-need-to-interact-with-1024x435.jpeg)  
 
  1️⃣ Frontend (React + Thirdweb)  
 - Next.js + React.js – Giao diện mượt mà, hiệu suất tối ưu.  

@@ -198,11 +198,13 @@ IPFS_API_KEY=your_ipfs_key
  ▶️ 3. Chạy Dự Án  
  Chạy Backend
 ```bash
+cd NFT_Templates
 cd my_app
 npm run server
 ```
  Chạy Frontend
 ```bash
+cd NFT_Templates
 cd my_app
 npm run build
 npm start
@@ -212,9 +214,15 @@ Sau đó, mở trình duyệt và truy cập http://localhost:3000 để trải 
 ---
 
  📜 Triển Khai Smart Contract  
-Để triển khai smart contract lên blockchain, chạy lệnh sau:  
+Để triển khai smart contract lên blockchain, chạy lệnh sau:
 ```bash
-npx hardhat run scripts/deploy.js --network <network>
+cd Smart_Contract
+npm run dev
+```
+Mở terminal khác và chạy lệnh sau để deploy:
+```bash
+cd Smart_Contract
+npm start
 ```
 Thay `<network>` bằng Ethereum, Polygon, Mammoth hoặc bất kỳ blockchain nào được hỗ trợ.  
 

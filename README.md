@@ -1,6 +1,3 @@
-Dưới đây là phiên bản README.md song ngữ (English - Vietnamese) giúp dự án Video NFT DEX tiếp cận cộng đồng quốc tế và Việt Nam.  
-
----
 
  🎥 Video NFT DEX – Decentralized Exchange for Video NFTs 🚀  
 

@@ -113,11 +113,11 @@ Replace `<network>` with Ethereum, Polygon, Mammoth, or any supported blockchain
 
 ---  
 
-📩 **Contact & Community**  
-- 📌 **Website**: [videonftdex.com](https://videonftdex.com)  
-- 🚀 **Facebook**: [DVR Official](https://www.facebook.com/dvr.official.2203)  
-- 📞 **Phone**: +84 976 095 303  
-- 📧 **Email**: dinhlnng2003@gmail.com  
+📩 Contact & Community  
+- 📌 Website: [videonftdex.com](https://videonftdex.com)  
+- 🚀 Facebook: [Dinhvaren](https://www.facebook.com/dvr.official.2203)  
+- 📞 Phone: +84 976 095 303  
+- 📧 Email: dinhlnng2003@gmail.com  
 
 ---
 
@@ -254,7 +254,7 @@ Thay `<network>` bằng Ethereum, Polygon, Mammoth hoặc bất kỳ blockchain 
 
 📩 Liên Hệ & Cộng Đồng  
 - 📌 Website: [videonftdex.com](https://videonftdex.com)  
-- 🚀 Facebook: [DVR Official](https://www.facebook.com/dvr.official.2203)  
+- 🚀 Facebook: [Dinhvaren](https://www.facebook.com/dvr.official.2203)  
 - 📞 Số điện thoại: +84 976 095 303  
 - 📧 Email: dinhlnng2003@gmail.com  
 

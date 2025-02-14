@@ -69,7 +69,7 @@ class WalletConnectController {
       clientId: this.clientId, // Trả về clientId
       wallets: this.wallets, // Trả về danh sách ví có thể kết nối
     });
-  };
-}
 
+}
+}
 export default new WalletConnectController();

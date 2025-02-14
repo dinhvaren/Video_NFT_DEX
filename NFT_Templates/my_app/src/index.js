@@ -5,6 +5,8 @@ import path from 'path'; // Thư viện làm việc với đường dẫn file
 import next from 'next'; // Import Next.js để kết hợp với Express
 import { fileURLToPath } from 'url'; // Giúp xử lý đường dẫn file trong ES Modules
 import route from '../src/routers/route.js';
+import db from './config/index.js'; // import db từ config để kết nối với mongodb
+
 // Khởi tạo ứng dụng Express
 const app = express();
 // Cổng mà server sẽ chạy
@@ -18,10 +20,8 @@ const handle = nextApp.getRequestHandler(); // Xử lý request Next.js
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// const db = require('./config/db');
-
 // Kết nối database
-// db.connect();
+db.connect();
 // Ghi log tất cả request đến server
 app.use(morgan('combined'));
 // Middleware để xử lý dữ liệu JSON từ request body

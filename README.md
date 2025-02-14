@@ -67,13 +67,13 @@ IPFS_API_KEY=your_ipfs_key
  Start Backend
 ```bash
 cd my_app
-npm run server
+nodemon src/index.js
 ```
  Start Frontend
 ```bash
 cd my_app
-npm run build
-npm start
+npm next build
+npm next start 
 ```
 Then open your browser and visit http://localhost:3000 to experience it!  
 
@@ -82,6 +82,8 @@ Then open your browser and visit http://localhost:3000 to experience it!
  📜 Deploying Smart Contracts  
 To deploy smart contracts on a blockchain, run:  
 ```bash
+cd Smart_Contract
+npx hardhat node
 npx hardhat run scripts/deploy.js --network <network>
 ```
 Replace `<network>` with Ethereum, Polygon, Mammoth, or any supported blockchain.  
@@ -200,14 +202,14 @@ IPFS_API_KEY=your_ipfs_key
 ```bash
 cd NFT_Templates
 cd my_app
-npm run server
+nodemon src/index.js
 ```
  Chạy Frontend
 ```bash
 cd NFT_Templates
 cd my_app
-npm run build
-npm start
+npm next build
+npm next start
 ```
 Sau đó, mở trình duyệt và truy cập http://localhost:3000 để trải nghiệm!  
 
@@ -217,12 +219,12 @@ Sau đó, mở trình duyệt và truy cập http://localhost:3000 để trải 
 Để triển khai smart contract lên blockchain, chạy lệnh sau:
 ```bash
 cd Smart_Contract
-npm run dev
+npx hardhat node
 ```
 Mở terminal khác và chạy lệnh sau để deploy:
 ```bash
 cd Smart_Contract
-npm start
+npx hardhat run scripts/deploy.js --network <network>
 ```
 Thay `<network>` bằng Ethereum, Polygon, Mammoth hoặc bất kỳ blockchain nào được hỗ trợ.  
 
